@@ -2,20 +2,41 @@
 
 A machine learning project that predicts a student's exam score based on academic and lifestyle-related factors.
 
-The project uses a Gradient Boosting Regressor and provides an interactive web interface built with Streamlit.
+## 🚀 Live Demo
 
-## 🚀 Features
+Want to try the application yourself?
 
-- Predicts student exam scores
-- Interactive Streamlit interface
-- Uses multiple student-related features
-- Machine learning model comparison
+👉 **[Live Demo – Student Marks Predictor](https://student-marks-predictor-ai.streamlit.app/)**
+
+Open the link above to use the deployed Streamlit application and get a predicted exam score.
+
+## 📌 Project Overview
+
+This project predicts student exam scores using machine learning.
+
+The project includes:
+
+- Data preprocessing
+- Exploratory data analysis
+- Multiple regression models
+- Model comparison
 - Hyperparameter tuning using RandomizedSearchCV
-- Model evaluation using R², MAE and RMSE
+- Model serialization using Pickle/Joblib
+- Interactive Streamlit frontend
+- Deployment as a live web application
+
+## 🤖 Machine Learning Models
+
+Two major regression models were compared:
+
+- Random Forest Regressor
+- Gradient Boosting Regressor
+
+After comparing their performance using R², MAE, RMSE and Cross-Validation, **Gradient Boosting Regressor** was selected as the final model.
 
 ## 📊 Input Features
 
-The model uses the following features:
+The model uses:
 
 - Study Hours
 - Attendance
@@ -24,28 +45,14 @@ The model uses the following features:
 - Assignment Completion
 - Previous Score
 
-## 🤖 Machine Learning
+## 📈 Model Performance
 
-Several regression algorithms were evaluated, including:
+The final Gradient Boosting model achieved approximately:
 
-- Linear Regression
-- Random Forest Regressor
-- Gradient Boosting Regressor
+- **Test R²: 0.73**
+- **Cross-Validation R²: ~0.71**
 
-After comparison and hyperparameter tuning, Gradient Boosting Regressor was selected as the final model.
-
-## 📈 Model Evaluation
-
-The final model was evaluated using:
-
-- R² Score
-- Mean Absolute Error (MAE)
-- Root Mean Squared Error (RMSE)
-- Cross-validation
-
-The final model achieved approximately:
-
-- Test R²: 0.73
+The model was further tuned using `RandomizedSearchCV`.
 
 ## 🛠️ Technologies Used
 
@@ -53,8 +60,14 @@ The final model achieved approximately:
 - Pandas
 - NumPy
 - Scikit-learn
-- Joblib
+- Joblib / Pickle
 - Streamlit
+
+## 🌐 Deployment
+
+The application is deployed using Streamlit and is available as a live web application.
+
+👉 **[Try the Live Demo](https://student-marks-predictor-ai.streamlit.app/)**
 
 ## 📁 Project Structure
 
